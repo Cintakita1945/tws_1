@@ -3,8 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ</title>
-
+  <title>ㅤ</title>
   <style>
     body {
       margin: 0;
@@ -21,11 +20,16 @@
       object-fit: contain;
     }
   </style>
-
-  <!-- Redirect langsung ke Shopee tanpa og:tag -->
-  <meta http-equiv="refresh" content="0;url=https://s.shopee.co.id/4fkdKEWePr" />
 </head>
 <body>
-  <img src="tws.webp" alt="TWS Macaron Bluetooth" />
+  <img src="/tws.webp" alt="Promo TWS Macaron Bluetooth" />
+  <script>
+    const userAgent = navigator.userAgent.toLowerCase();
+    const isBot = /facebookexternalhit|facebot|twitterbot|whatsapp|telegrambot|linkedinbot/.test(userAgent);
+
+    if (!isBot) {
+      window.location.href = "https://s.shopee.co.id/4fkdKEWePr";
+    }
+  </script>
 </body>
 </html>
